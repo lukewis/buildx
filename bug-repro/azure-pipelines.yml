@@ -20,5 +20,5 @@ stages:
 
     - script: cd bug-repro && ./build.sh
       displayName: Build & Push Image
-      # buildx writes to stderr
-      # failOnStderr: true
+      # buildx writes to stderr, even for successful builds
+      failOnStderr: true
