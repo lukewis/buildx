@@ -18,7 +18,7 @@ stages:
         addPipelineData: false
         addBaseImageData: false
 
-    - script: ./build.sh
+    - script: cd bug-repro && ./build.sh
       displayName: Build & Push Image
       # buildx writes to stderr
       # failOnStderr: true
